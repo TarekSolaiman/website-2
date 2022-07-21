@@ -1,0 +1,352 @@
+    /* ========
+    Body styles
+    ======== */
+
+    * {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+    /* ===================
+    My first header styles
+    =================== */
+
+
+
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        border-radius: 10px;
+        width: 89vw;
+        margin: 30px auto;
+    }
+
+
+
+    .box-1 {
+        margin: auto;
+        width: 40%;
+    }
+
+    .txt-clr {
+        color: white;
+        margin-top: 10px;
+    }
+
+    .title {
+        font-size: 3.5em;
+    }
+
+    .first-pera {
+        font-size: 1.1em
+    }
+
+    .btn {
+        font-size: 1.1em;
+        background-color: springgreen;
+        border-radius: 8px;
+        padding: 8px 15px;
+    }
+
+    .btn:hover {
+        background-color: gold;
+    }
+
+    .box-2 {
+        margin: auto;
+        width: 40%;
+    }
+
+    .first-img {
+        width: 100%;
+    }
+
+
+    /* ==============
+    My section styles 
+    ================*/
+
+    .my-section {
+        display: flex;
+        width: 89vw;
+        margin: 100px auto;
+        justify-content: space-between;
+    }
+
+    /* =============
+    My section button list style
+    =============== */
+
+    .btn-list {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        border-radius: 8px;
+        margin-right: 25px;
+        width: 380px;
+        height: 280px;
+    }
+
+    .btn-2 {
+        font-size: 1.1em;
+        background-color: springgreen;
+        border-radius: 8px;
+        display: block;
+        margin: auto;
+        width: 200px;
+        height: 50px;
+        border: none;
+    }
+
+    .btn-2 a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+    }
+
+    #select-btn {
+        background-color: gold;
+    }
+
+    /* =================
+    My blog list styles
+    ================= */
+
+    .blog-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 25px;
+    }
+
+    /* ================
+    My blog styles
+    ================ */
+
+    .blog {
+        width: 100%;
+        box-shadow: 1px 1px 8px 1px #e1dede;
+        border-radius: 8px;
+        text-align: justify;
+    }
+
+    .blog-images img {
+        width: 100%;
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .blog-btn {
+        font-size: 15px;
+        border: none;
+        background-color: rgb(221, 219, 219);
+        border-radius: 2px;
+        padding: 5px 10px;
+    }
+
+    .blog-titles {
+        margin: 10px 10px;
+    }
+
+    .blog-title {
+        padding-top: 10px;
+    }
+
+    .blog-icon {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px;
+        font-size: 1.1em;
+        color: gray;
+    }
+
+
+    .view-btn {
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hiden-btn {
+        border: none;
+        color: white;
+        background-color: springgreen;
+        font-size: 1.2em;
+        border-radius: 5px;
+        width: 200px;
+        height: 50px;
+    }
+
+    /* =============
+    My footer Styles
+    ============= */
+
+    .my-footer {
+        margin-top: 100px;
+        background-color: black;
+        text-align: center;
+    }
+
+    .fot-title {
+        padding-top: 100px;
+        color: white;
+        font-size: 2.5em;
+    }
+
+    .fot-line {
+        border: 0.5px solid gray;
+        margin: 50px auto;
+        width: 89vw;
+    }
+
+    .fot-list-box {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+
+    .fit-list a {
+        text-decoration: none;
+        color: gray;
+        font-size: 1em;
+        padding: 20px;
+    }
+
+    /* +++++++++++++++
+        WEBSITE 2
+    +++++++++++++++ */
+
+    .blog-match {
+        width: 300px;
+        height: 250px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px gray;
+    }
+
+    .flag-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+
+    .flag-images h4 {
+        padding: 0 10px;
+    }
+
+    .flag-images img {
+        width: 100px;
+    }
+
+    .match-titles {
+        text-align: center;
+        margin: 30px;
+    }
+
+    .match-title {
+        font-size: 1.3em;
+    }
+
+    .match-p {
+        text-align: center;
+        font-size: 1.0em;
+        color: gray;
+    }
+
+    /* =====================
+        responsive styles
+    ====================== */
+
+    @media screen and (max-width:688px) {
+
+        /* header respinsive */
+
+        .main-header {
+            flex-direction: column;
+        }
+
+        .box-1,
+        .box-2 {
+            text-align: center;
+            width: 80%;
+            margin-top: 50px;
+        }
+
+        /* section responsive */
+
+        .my-section {
+            flex-direction: column;
+            margin-top: 0;
+
+        }
+
+        .btn-list {
+            background: none;
+            width: 100%;
+        }
+
+        .btn {
+            width: 60%;
+        }
+
+        /* footer styles */
+
+        .blog-list {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+        }
+
+        .blog {
+            width: 80%;
+        }
+
+        .fot-list-box {
+            flex-direction: column;
+            padding: 0 0 50px 0px;
+        }
+
+        .fit-list {
+            margin-top: 40px;
+        }
+
+
+    }
+
+    @media screen and (min-width:689px) and (max-width:992px) {
+
+        /* header respinsive */
+        .main-header {
+            padding: auto;
+        }
+
+        .box-1,
+        .box-2 {
+            text-align: center;
+            width: 45%;
+            margin-top: 50px;
+        }
+
+        /* section responsive */
+
+        .btn-list {
+            /* background: none;*/
+            width: 380px;
+            margin-right: 25px;
+        }
+
+        .btn {
+            width: 80%;
+        }
+
+        .blog-list {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 25px;
+        }
+
+        .view-btn {
+            visibility: visible;
+        }
+
+    }
